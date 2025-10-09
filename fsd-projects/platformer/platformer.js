@@ -1,5 +1,4 @@
-$(function () {
-  // initialize canvas and context when able to
+$(function () {  // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
   window.addEventListener("load", loadJson);
@@ -27,32 +26,49 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid();
+     toggleGrid();
 
 
     // TODO 2 - Create Platforms
-    createPlatform(200,700,100,20)
-    createPlatform(500,600,200,20)
-    createPlatform(900,500,100,10)
-    createPlatform(1100,375,100,10)
-    createPlatform(800,250,100,10)
-    createPlatform(100,200,400,10)
-    createPlatform(600,200,100,10)
+  // createPlatform(200,700,100,20)
+  createPlatform(200, 700, 100, 20)
+   // createPlatform(500,600,200,20)
+   createPlatform(500,600,200,20)
+   // createPlatform(900,500,100,10)
+   createPlatform(900,500,100,50)
+   // createPlatform(1100,375,100,10)
+   createPlatform(1100,375,100,10)
+   // createPlatform(800,250,100,10)
+   createPlatform(800,250,100,10)
+   // createPlatform(100,200,400,10)
+   createPlatform(100,200,400,10)
+   // createPlatform(600,200,100,10)
+createPlatform(600,200,100,10)
+
+
 
     // TODO 3 - Create Collectables
-    createCollectable("steve", 550,550)
+   // createCollectable("steve", 550,550)
+   createCollectable("steve", 550,550)
+   // createCollectable("diamond", 950, 450)
     createCollectable("diamond", 950, 450)
-    createCollectable("grace", 1000,200)
-    createCollectable("max", 150,150)
-    createCollectable("kennedi", 650,150)
+   // createCollectable("grace", 1000,200)
+      createCollectable("grace", 1000,200)
+   // createCollectable("max", 150,150)
+   createCollectable("max", 150,150)
+   // createCollectable("kennedi", 650,150)
+createCollectable("kennedi", 650,150)
 
 
-    
+   
     // TODO 4 - Create Cannons
+//createCannon("left",100, 50)
+  createCannon("top", 800, 1000)
+  createCannon("bottom", 500, 700)
+  createCannon("bottom", 1000, 700)
 
-
-    
-    
+   
+   
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
